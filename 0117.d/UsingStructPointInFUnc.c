@@ -13,7 +13,7 @@ struct tagAddress{
 	char name[30];
 	char phone[20];
 	char address[100];
-};
+}TA;
 
 
 void main(void){
@@ -22,8 +22,10 @@ void main(void){
 	strcpy(ad.name, "Hing-Guo");
 	strcpy(ad.phone, "010-1234-5678");
 	strcpy(ad.address, "Korea, Seoul");
-
+	strcpy(TA.name, "TATest");
 	print(&ad);
+
+	printf("%s", TA.name);
 }
 
 struct tagAddress print(struct tagAddress *pad){
